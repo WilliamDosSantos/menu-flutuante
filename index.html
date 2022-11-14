@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu_content">
+        <div class="item floating_item" style="background-color: #0081CF; z-index: 1; rotate: 45deg;">
+            <i class='bx bx-x'></i>
+        </div>
+        <div class="options">
+            <div class="item" style="background-color: #008E9B;">
+                <i class='bx bxs-pencil'></i>
+            </div>
+            <div class="item" style="background-color: #FFC75F;">
+                <i class='bx bx-cog'></i>
+            </div>
+            <div class="item" style="background-color: #D65DB1;">
+                <i class='bx bx-printer' ></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.floating_item')
+
+        menu.onclick = () =>  menu.classList.toggle('active')
+    </script>
+</body>
+</html>
